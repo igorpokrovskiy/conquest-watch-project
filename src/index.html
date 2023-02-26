@@ -8,9 +8,138 @@
 </head>
 <body class="page">
     <header class="header">
+        <div class="header__top-container">
+            <img src="<%=require('./images/logo.svg')%>" alt="Header logo" class="header__logo">
+            <ul class="header__menu">
+                <li class="header__item"><a class="header__item-link" href="#">Каталог</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">Акции</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">Доставка</a></li>
+                <li class="header__item"><a class="header__item-link" href="#">Контакты</a></li>
+            </ul>
+            <div class="header__user-block">
+                <button type="button" class="user-button search-button"></button>
+                <button type="button" class="user-button like-button"></button>
+                <button type="button" class="user-button cart-button"></button>
+            </div>
+        </div>
+        <div class="header__promo">
+            <div class="header__info-block">
+            <div class="header__info-line"></div>
+            <h1 class="header__title">Весна/Лето 2019</h1>
+            <h2 class="header__subtitle">Коллекция</h2>
+            <p class="header__text">Швейцарские часы в наличии в Москве
+                и с доставкой по всему миру</p>
+            <button class="button header__button">Смотреть каталог</button>
+            </div>
+            <div class="header__image-block">
+                <img src="<%=require('./images/Ellipse.png')%>" alt="" class="header__elipse">
+                <img src="<%=require('./images/promo_image.png')%>" alt="" class="header__promo-image">
+                <p class="header__promo-price">22 000 ₽</p>
+                <p class="header__promo-diametr">28 мм диаметр</p>
+                <div class="header__promo-line-left"></div>
+                <div class="header__promo-line-right"></div>
+            </div>
+        </div>
     </header>
- 
+    <section class="models">
+        <h2 class="models__title">Популярные модели</h2>
+        <a href="#" class="models__link">Смотреть все</a>
+        <div class="models__container">
+            <div class="models__item">
+                <p class="models__item-name">RADO</p>
+                <p class="models__item-price">65 300 ₽</p>
+                <img src="<%=require('./images/watch1.png')%>" alt="" class="models__item-image">
+                <div class="models-link">
+                <div class="models__line"></div>
+                <a href="" class="models__item-link">Подробнее</a>
+                </div>
+            </div>
+            <div class="models__item">
+                <p class="models__item-name">BVLGARI</p>
+                <p class="models__item-price">81 700 ₽</p>
+                <img src="<%=require('./images/watch2.png')%>"" alt="" class="models__item-image">
+                <div class="models-link">
+                <div class="models__line"></div>
+                <a href="" class="models__item-link">Подробнее</a>
+                 </div>
+            </div>
+            <div class="models__item">
+                <p class="models__item-name">BVLGARI</p>
+                <p class="models__item-price">72 700 ₽</p>
+                <img src="<%=require('./images/watch3.png')%>"" alt="" class="models__item-image">
+                <div class="models-link">
+                <div class="models__line"></div>
+                <a href="" class="models__item-link">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="benefits">
+        <div class="benefits__background-container">
+            <img src="<%=require('./images/background_banner_1.png')%>"" alt="" class="benefits__background-left">
+            <img src="<%=require('./images/background_banner_2.png')%>"" alt="" class="benefits__background-right">
+        </div>
+            <img src="<%=require('./images/benefits_image.png')%>" alt="" class="benefits__image">
+        <div class="benefits__info">
+            <h2 class="benefits__title">Подлинное качество</h2>
+            <div class="benefits__subtitle">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</div>
+            <button class="button benefits__button">СМОТРЕТЬ КАТАЛОГ</button>
+        </div>
+        <div class="benefits__paginator">
+            <a href="#" class="paginator-link"><</a>
+            <a href="#" class="paginator-link">01</a>
+            <a href="#" class="paginator-link">></a>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="contacts__info">
+            <h2 class="contacts__title">Следите за нашими новостями</h3>
+            <p class="contacts__subtitle">Подписывайтесь на <b>@conquest_watch</b> в соцсетях и узнавайте о новинках и акциях первыми.</p>
+            <div class="contacts__social-block">
+                <button type="button" class="contacts-button contacts-instagram"></button>
+                <button type="button" class="contacts-button contacts-facebook"></button>
+                <button type="button" class="contacts-button contacts-twitter"></button>
+            </div>
+        </div>
+        <div class="contacts__images">
+            <div class="contacts__images-left">
+                <img src="<%=require('./images/image_left_1.jpg')%>" alt="" class="image-left">
+                <img src="<%=require('./images/image_left_2.jpg')%>" alt="" class="image-left">
+            </div>
+            <div class="contacts__images-right">
+                <img src="<%=require('./images/image_right.jpg')%>" alt="" class="image-right">
+            </div>
+        </div>
+    </section>
     <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__menu-block">
+                <img src="<%=require('./images/footer_logo.svg')%>" alt="" class="footer__logo">
+                <a href="tel:+74994504797" class="footer__item-link">8 (499) 450-47-97</a>
+                <a href="mailto:info@conquest.watch.ru" class="footer__item-link">info@conquest.watch.ru</a>
+            </div>
+            <div class="footer__menu-block">
+                <p class="footer__heading">о компании</p>
+                <a href="#" class="footer__item-link">Наши магазины</a>
+                <a href="#" class="footer__item-link">Вакансии</a>
+                <a href="#" class="footer__item-link">Сертификаты</a>
+                <a href="#" class="footer__item-link">Отзывы</a>
+            </div>
+            <div class="footer__menu-block">
+                <p class="footer__heading">покупателям</p>
+                <a href="#" class="footer__item-link">Каталог товаров</a>
+                <a href="#" class="footer__item-link">Как заказать?</a>
+                <a href="#" class="footer__item-link">FAQ</a>
+                <a href="#" class="footer__item-link">Корпоративным клиентам</a>
+            </div>
+            <div class="footer__menu-block">
+                <p class="footer__heading">оплата и доставка</p>
+                <a href="#" class="footer__item-link">Способы оплаты</a>
+                <a href="#" class="footer__item-link">Время доставки</a>
+                <a href="#" class="footer__item-link">Гарантии и ремонт</a>
+                <a href="#" class="footer__item-link">Возврат и компенсация</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
